@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>PreRelease Testing</title>
+    <link rel="stylesheet" href="/design/alpha.css">
+    <meta name="theme-color" content="#0052CB">
+</head>
+
+<nav class="navbar">
+        <a href="/index.html">
+            <img class="primary-icon" src="/images/miniicon.png"/>
+        </a>
+    <ul class="nav-list" id="navi-list">
+        <li class="list-item1">
+            <a href="/store.html">Option 1 </a>
+        </li>
+            <li class="list-item">
+            <a href="/about.html">Option 2</a>
+        </li>
+            <li class="list-item">
+                <a href="/news.html">Option 3</a>
+            </li>
+    </ul>
+        <div class="menu" id="toggle-button">    
+            <a href="/store.html">
+        <img id="bag" src="/images/navicon1.png"/>
+        </a>
+        <div class="menu-line1"></div>
+        <div class="menu-line2"></div>
+        <div class="menu-line3"></div>
+    </div>
+    </nav>
+<script>
+const toggleButton = document.getElementById('toggle-button');
+const naviList = document.getElementById('navi-list');
+const listItem = document.querySelector('.list-item')
+const menuLine1 = document.querySelector('.menu-line1');
+const menuLine2 = document.querySelector('.menu-line2');
+const menuLine3 = document.querySelector('.menu-line3');
+const navbar = document.querySelector('.navbar');
+const bag = document.querySelector('#bag');
+
+toggleButton.addEventListener('click', () => {
+  naviList.classList.toggle('active');
+
+  if (naviList.classList.contains('active')) {
+    menuLine1.classList.add('active');
+    menuLine2.classList.add('active');
+    menuLine3.classList.add('active');
+    navbar.classList.add('active')
+    bag.classList.add('active')
+    listItem.classList.add('active')
+  } else {
+    menuLine1.classList.add('reverse');
+    menuLine2.classList.add('reverse');
+    menuLine3.classList.add('reverse');
+    navbar.classList.add('reverse');
+    bag.classList.add('reverse');
+    listItem.classList.add('reverse')
+
+    setTimeout(() => {
+      menuLine1.classList.remove('reverse', 'active');
+      menuLine2.classList.remove('reverse', 'active');
+      menuLine3.classList.remove('reverse', 'active');
+      navbar.classList.remove('reverse', 'active');
+      bag.classList.remove('reverse', 'active');
+      listItem.classList.remove('reverse', 'active')
+    }, 350);
+  }
+});
+</script>
+
+<body>
+    <div class="banner">
+        <p class="banner-text">Alpha Build: 1z23</p>
+    </div>
+</body>
+
+Nothing to see here, yet...
+</html>
