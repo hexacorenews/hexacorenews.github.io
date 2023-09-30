@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PreRelease Testing</title>
     <link rel="stylesheet" href="/Design/alpha.css">
     <meta name="theme-color" content="#383838">
@@ -16,19 +16,37 @@
     <div class="imgcontent">
         <img class="ricon" src="/images/HexaCore.png">
     </div>
-    <div class="txtcontent">
+    <div class="txtcontentr">
         <p id="logotext"><a href="/index.html" style="background-color: transparent;text-decoration: none;">HexaCore News</p></a>
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+    var isLnavActive = false;
+    
+    $('.lnav').on('click', function(){
+        if (!isLnavActive) {
+            $(this).addClass('active');
+            isLnavActive = true;
+        } else {
+            $(this).removeClass('active');
+            isLnavActive = false;
+        }
+    });
+});
+</script>
+
 <div class="lnav">
-    <div class="txtcontent">
+    <div class="txtcontentl" style="background-color: transparent;">
+        <a href="/Account.html"><img src="/images/pfplaceholder.png" id="pfp"></a>
         <p><a href="/News.html" class="optxt">News</a></p>
         <p><a href="/Tutorials.html" class="optxt">Tutorials</a></p>
         <p><a href="/Reviews.html" class="optxt">Reviews</a></p>
         <p><a href="/Forums.html" class="optxt">Forums</a></p>
-        <input type="text" placeholder="Search">
-        <a href="/Account.html"><img src="/images/pfplaceholder.png" id="pfp"></a>
+        <input id="search" type="text" placeholder="Search">
+        <p><a href="/Account.html" id="act">Account</a></p>
     </div>
 </div>
 
