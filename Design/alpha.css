@@ -207,6 +207,10 @@
     background: transparent;
   }
 
+  #act {
+    display: none;
+  }
+  
   #pfp {
     height: 36px;
     width: 36px;
