@@ -721,11 +721,10 @@
   }
 
   .ftbltxt {
-    width: 100%;
     position: absolute;
     padding-top: 170px;
     padding-left: 20px;
-    padding-right: 220px;
+    padding-right: 0;
     padding-bottom: 19px;
     background-color: transparent;
     color: rgb(255, 255, 255);
