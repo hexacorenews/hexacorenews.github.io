@@ -51,80 +51,49 @@
 </div>
 
 <div class="container">
-    <p class="lead">Forums</p>
+    <p class="lead">Forum Title</p>
 </div>
 
-<!-- This is for the new Forum UI
-
-    <script>
-    function align() {
-    // Get the overall width we're fitting into.
-    var width = $('.tblcontainer').outerWidth();
-    // Get the individual item width.
-    var ftblWidth = $('.ftbl').outerWidth();
-    // Calculate how many items are likely to fit on one line.
-    var nodesPerLine = Math.floor(width / ftblWidth);
-    // If we have calculated more than we have, fix it.
-    if(nodesPerLine > $('.ftbl').length) nodesPerLine = $('.ftbl').length;
-    // Calculate how much space we have spare.
-    var remainder = width - (nodesPerLine * ftblWidth);
-    // Calcaulate the gap between each item.
-    var gap = remainder / nodesPerLine;
-    // Calculate the margin for each side.
-    var channel = gap / 3;
-    // Set the CSS.
-    $('.ftbl').css({ marginLeft : channel, marginRight : channel });    
-    $('.containerftbl').css('padding', 0);
+<script>
+    function auto_grow(element) {
+  element.style.height = "5px";
+  element.style.height = (element.scrollHeight) + "px";
 }
-$(document).ready(function() {
-    $(window).resize(align);
-    align();
-});
 </script>
 
 <div class="container">
-<div class="containerftbl">
-    <div class="tblcontainer">
-        <div class="ftbl"><p class="ftbltxt">Title</p>&nbsp;</div><div class="ftbl"><p class="ftbltxt">Title</p>&nbsp;</div><div class="ftbl"><p class="ftbltxt">Title</p></div>
+    <div class="fbox">
+        <img src="/images/pfplaceholder.png" id="fpfp">
+        <p class="fboxname">Username</p>
+        <p class="rank">Rank</p>
+        <p class="fboxtxt">“Welcome to HexaCore! This is the first post on our very own (also first) MacChime Forum! I cannot wait to get this out to the public and am looking very forward to the future of HexaCore as a whole. I have so many exciting things planned for HexaCore and our MacChime Forums which will be revealed to everyone in the very near future.” ~Carter (IceCool Tech)</p>
     </div>
-</div>
-</div>
-
-<div class="container">
-    <p class="leadsm">Forums</p>
-</div>
-
--->
-
-<div class="container">
-    <div class="ftbl">
-        <p><a href="outline.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
+    <div class="fbox">
+        <img src="/images/pfplaceholder.png" id="fpfp">
+        <p class="fboxname">Username</p>
+        <p class="rank">Rank</p>
+        <p class="fboxtxt">Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text Long text long text long text</p>
     </div>
-    <div class="ftbl">
-        <p><a href="error.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
+    <div class="fbox">
+        <img src="/images/pfplaceholder.png" id="fpfp">
+        <p class="fboxname">Username</p>
+        <p class="rank">Rank</p>
+        <div class="photo">
+            <img src="images/imgplacholder.png">
+        </div>
+        <p class="fboxtxt">Image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text image text</p>
     </div>
-    <div class="ftbl">
-        <p><a href="error.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
-    </div>
-    <div class="ftbl">
-        <p><a href="error.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
-    </div>
-    <div class="ftbl">
-        <p><a href="error.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
-    </div>
-    <div class="ftbl">
-        <p><a href="error.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
-    </div>
-    <div class="ftbl" style="margin-bottom: 14px;">
-        <p><a href="error.html" class="ftbltxt">TITLE</a></p>
-        <img src="images/placeholderforum.png">
-    </div>
+    <div class="fbox" style="margin-bottom: 150px;">
+        <img src="/images/pfplaceholder.png" id="fpfp">
+        <p class="fboxname">Username</p>
+        <p class="rank">Rank</p>
+        <div class="commentBG">
+            <textarea wrap="soft" class="commentField" oninput="auto_grow(this)" placeholder="What would you like to say?"></textarea>
+            <div class="sendalignment">
+                <button class="send">Send</button>
+            </div>
+        </div>
+    </div> 
 </div>
 
 <div class="footercontainer">
